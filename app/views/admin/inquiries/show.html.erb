@@ -1,23 +1,20 @@
-<h1>Contact Us Form</h1>
+<h1><%= t("contact_us.view_inquiry") %></h1>
 
-
-			<p>
-				Name: <%= @inquiry.name %>
-			</p>
-			<p>
-				Email: <%= @inquiry.email %>
-			</p>
-			<p>
-				Type: <%= @inquiry.inquiry_type %>
-			</p>
-			<p>
-				Order Number: <%= @inquiry.order_no %>
-			</p>
-			<p>
-				Message: <%=h @inquiry.message %>
-			</p>
-			<p>
-	<%= link_to "Back", collection_url %> |      
-	<%=link_to t("delete"), object_url(@inquiry), :method => :delete %>
-	     </p>
-		</tr>
+<p>
+	<%= t("name") %>: <%= @inquiry.name %>
+</p>
+<p>
+	<%= t("email") %>: <%= @inquiry.email %>
+</p>
+<p>
+	<%= t("email") %>: <%= @inquiry.inquiry_type %>
+</p>
+<p>
+	<%= t("order_number") %>: <%= @inquiry.order_no %>
+</p>
+<p>
+	<%= t("contact_us.message") %>: <%=h @inquiry.message %>
+</p>
+<p>
+  <%= link_to t("back"), collection_url %> | <%=link_to t("delete"), object_url(@inquiry), :method => :delete %>
+</p>

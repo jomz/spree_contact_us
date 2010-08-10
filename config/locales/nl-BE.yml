@@ -1,0 +1,18 @@
+nl-BE:
+  inquiries: Contactnames
+  contact_us:
+    inquiry_type: Soort vraag
+    kinds_of_questions:
+      general_info: Algemene Informatie
+      order_info: Informatie over een bestelling
+      feedback: Feedback
+      feature_request: Een verbetering aan de site voorstellen
+      bug_report: Een probleem met de site melden
+      other: Andere
+    list_of_inquiries_submitted: Dit is een lijst van contactnames via de website. Normaal ontvang je telkens een kopie hiervan op {{email}}
+    message: Bericht
+    send: Verzenden
+    title: Contact opnemen met ons
+    view_inquiry: Showing inquiry
+    your_name: Naam
+    your_email: Email adres

@@ -1,34 +1,32 @@
 <% content_for :page_title do %>
-	<%= @site_page.page_title rescue '' %>
+  <%= @site_page.page_title rescue '' %>
 <% end %>
 
-<h1>Contact Us!</h1>
-
+<h1><%= t("contact_us.title") %></h1>
 
 <div id="product-wrapper">
-<%= error_messages_for :inquiry %>
-<div class="generic_form">
-	<% form_for(:inquiry, :url => collection_url) do |f| %>
-	  <p><%= f.label :name, "Your Name" %>
-		   <%= f.text_field :name, :class => 'required' %>
-		</p>
-		<p><%= f.label :email, "Your Email Address" %>
-		   <%= f.text_field :email, :class => 'required email' %>
-		</p>
-		<p><%= f.label :name, "Type of Inquiry" %>
-		   <%= f.select :inquiry_type, INQUIRY_TYPES %>
-		</p>
-		<p><%= f.label :order_no, "Order #" %>
-		   <%= f.text_field :order_no %>
-		</p>
-		<p><%= f.label :message, "Message" %>
-		   <%= f.text_area :message, :class => 'required' %>
-		</p>
-		
-	  <p>
-	    <%= submit_tag "Send It!" %>
-	  </p>
-	<% end %>
-	
-</div>
+  <%= error_messages_for :inquiry %>
+  <div class="generic_form">
+    <% form_for(:inquiry, :url => collection_url) do |f| %>
+      <p><%= f.label :name, t("contact_us.your_name") %>
+         <%= f.text_field :name, :class => 'required' %>
+      </p>
+      <p><%= f.label :email, t("contact_us.your_email") %>
+         <%= f.text_field :email, :class => 'required email' %>
+      </p>
+      <p><%= f.label :name, t("contact_us.inquiry_type") %>
+         <%= f.select :inquiry_type, INQUIRY_TYPES %>
+      </p>
+      <p><%= f.label :order_no, t("order_number") %>
+         <%= f.text_field :order_no %>
+      </p>
+      <p><%= f.label :message, t("contact_us.message") %>
+         <%= f.text_area :message, :class => 'required' %>
+      </p>
+    
+      <p>
+        <%= submit_tag t("contact_us.send") %>
+      </p>
+    <% end %>
+  </div>
 </div>

@@ -1,2 +1,18 @@
 en-US:
   inquiries: Contact Us
+  contact_us:
+    inquiry_type: Type of Inquiry
+    kinds_of_questions:
+      general_info: General Information
+      order_info: Order Information
+      feedback: Feedback
+      feature_request: Feature Request
+      bug_report: Bug Report
+      other: Other
+    list_of_inquiries_submitted: This is a list of all the Contact Us forms submitted on the site. You should also receive copies of these inquiries by email on {{email}}
+    message: Message
+    send: Send It!
+    title: Contact Us!
+    view_inquiry: Showing inquiry
+    your_name: Your Name
+    your_email: Your Email Address

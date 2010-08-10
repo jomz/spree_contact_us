@@ -1,14 +1,14 @@
-<h1>Contact Us Forms</h1>
-<h4>This is a list of all the Contact Us forms submitted on the site. You also receive copies of these inquiries by email.</h4>
+<h1><%= t("inquiries") %></h1>
+<h4><%= t("contact_us.list_of_inquiries_submitted", :email => Spree::Config[:contact_form_to]) %></h4>
 
 <table class="admin-report" width="545">
 	<thead>
 		<tr>
-      		<th>Name</th>
-      		<th>Email</th>
-      		<th>Type</th>
-					<th>Order #</th>
-					<th>message</th>
+      		<th><%= t("name") %></th>
+      		<th><%= t("email") %></th>
+      		<th><%= t("type") %></th>
+					<th><%= t("order_number") %></th>
+					<th><%= t("contact_us.message") %></th>
 					<th></th>
     	</tr>
   	</thead>
@@ -32,8 +32,8 @@
 				<%=h truncate(inquiry.message, 100) %>
 			</td>
 			<td>
-				<%= link_to "Check it", object_url(inquiry) %> | 
-	      <%=link_to "Delete it", object_url(inquiry), :method => :delete %>
+				<%= link_to t("show"), object_url(inquiry) %> | 
+	      <%=link_to t("delete"), object_url(inquiry), :method => :delete %>
 	     </td>
 		</tr>
 		<% end %>
