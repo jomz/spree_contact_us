@@ -11,7 +11,9 @@ nl-BE:
       other: Andere
     list_of_inquiries_submitted: Dit is een lijst van contactnames via de website. Normaal ontvang je telkens een kopie hiervan op {{email}}
     message: Bericht
+    inquiry_through_site: Contactname via de website
     send: Verzenden
+    thanks_for_getting_in_touch: Bedankt voor de contactname, we zullen je vraag zo snel mogelijk beantwoorden.
     title: Contact opnemen met ons
     view_inquiry: Showing inquiry
     your_name: Naam

@@ -1,8 +1,8 @@
-Contact Us Form Received
+<%= t("contact_us.inquiry_through_site") %>
 ========================
 
-From: <%= @comment.user.user_profile.fullname if @comment.user.user_profile %> (<%= @comment.user.email %>)
+<%= t("from") %>: <%= @comment.user.user_profile.fullname if @comment.user.user_profile %> (<%= @comment.user.email %>)
 
 ========================
-Feedback:
+<%= t("contact_us.message") %>:
 <%= @comment.message %>

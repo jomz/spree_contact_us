@@ -11,7 +11,9 @@ en-US:
       other: Other
     list_of_inquiries_submitted: This is a list of all the Contact Us forms submitted on the site. You should also receive copies of these inquiries by email on {{email}}
     message: Message
+    inquiry_through_site: Inquiry through the web site
     send: Send It!
+    thanks_for_getting_in_touch: Thanks for getting in touch. We will get back to you.
     title: Contact Us!
     view_inquiry: Showing inquiry
     your_name: Your Name
